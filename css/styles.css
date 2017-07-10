@@ -1,0 +1,34 @@
+div.mainDiv {
+  position: float;
+  background-color: white;
+  padding: 2em;
+  display: inline-block;
+  column-count: 2;
+  margin:10px 50px 10px;
+  width: 1000px;
+  outline-color: black;
+  outline-width: 1px;
+
+}
+
+.caption {
+  padding-top: 2em;
+  size: 36px;
+}
+
+.subhead {
+  font-family: 'Lato', sans-serif;
+  size: 12px;
+  padding-top: .5em;
+  padding-bottom: 2em;
+}
+
+body {
+  font: oswald regular, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('/assets/bg.jpg');
+}
+
+img.thumbs {
+  width: 100%; /*Tells image to fit to width of parent container*/
+}
