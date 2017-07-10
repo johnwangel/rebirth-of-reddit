@@ -3,6 +3,19 @@ const mainDiv = doc.getElementsByClassName('mainDiv');
 console.log(mainDiv);
 let req = makeXHRReq('GET', getStories, 'https://www.reddit.com/r/TheWayWeWere.json');
 
+let header = doc.createElement('div');
+header.setAttribute('class', 'header');
+let headImg = doc.createElement('img');
+headImg.setAttribute('src', '../assets/header_bg.svg');
+headImg.setAttribute('class', 'header_bg')
+let headImg2 = doc.createElement('img');
+headImg2.setAttribute('src', '../assets/logo.svg');
+headImg2.setAttribute('class', 'logo')
+
+header.appendChild(headImg);
+header.appendChild(headImg2);
+mainDiv[0].appendChild(header);
+
 function makeXHRReq( method, listenerFunction, url ) {
   let req = new XMLHttpRequest();
   req.addEventListener("load", listenerFunction);

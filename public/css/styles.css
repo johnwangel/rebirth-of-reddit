@@ -1,18 +1,36 @@
-.caption {
-  font: oswald, sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 2em;
-  size: 36px; }
+div.header {
+  background-color: white;
+  height: 70px; }
 
-.subhead {
+img.header_bg {
+  position: absolute;
+  top: 37px;
+  left: 520px;
+  height: 10px; }
+
+img.logo {
+  position: absolute;
+  top: 15px;
+  left: 660px;
+  height: 60px; }
+
+div.caption {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: .5em;
+  font-color: red; }
+
+div.subhead {
   font-family: 'Lato', sans-serif;
-  size: 36px;
-  padding-top: .5em; }
+  font-size: 12px;
+  padding-top: .5em;
+  color: gray; }
 
 div.story0 {
   position: absolute;
   background-color: white;
-  top: 25px;
+  top: 75px;
   left: 250px;
   padding: 25px;
   height: 400px;
@@ -29,7 +47,7 @@ div.story1 {
 
 div.story2 {
   position: absolute;
-  top: 25px;
+  top: 75px;
   left: 750px;
   background-color: white;
   padding: 25px;
@@ -49,7 +67,7 @@ div.image {
   position: relative;
   display: block;
   margin: auto;
-  width: 90%;
+  width: 98%;
   height: 70%;
   overflow: hidden; }
 
