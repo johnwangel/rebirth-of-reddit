@@ -1,0 +1,65 @@
+.caption {
+  font: oswald, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 2em;
+  size: 36px; }
+
+.subhead {
+  font-family: 'Lato', sans-serif;
+  size: 36px;
+  padding-top: .5em; }
+
+div.story0 {
+  position: absolute;
+  background-color: white;
+  top: 25px;
+  left: 250px;
+  padding: 25px;
+  height: 400px;
+  width: 400px; }
+
+div.story1 {
+  position: absolute;
+  top: 500px;
+  left: 250px;
+  background-color: white;
+  padding: 25px;
+  height: 400px;
+  width: 400px; }
+
+div.story2 {
+  position: absolute;
+  top: 25px;
+  left: 750px;
+  background-color: white;
+  padding: 25px;
+  height: 400px;
+  width: 400px; }
+
+div.story3 {
+  position: absolute;
+  top: 500px;
+  left: 750px;
+  background-color: white;
+  padding: 25px;
+  height: 400px;
+  width: 400px; }
+
+div.image {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: 70%;
+  overflow: hidden; }
+
+img.thumbs {
+  position: absolute;
+  max-width: 100%; }
+
+div.mainDiv {
+  position: float;
+  background-image: url("../assets/bg.jpg"); }
+
+body {
+  background-image: url("../assets/bg.jpg"); }
