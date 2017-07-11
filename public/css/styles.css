@@ -1,7 +1,7 @@
 div.header {
   background-color: white;
   position: absolute;
-  height: 80px;
+  height: 60px;
   width: 100vw;
   margin-top: -8px; }
 
@@ -9,93 +9,88 @@ div.menuBar {
   position: absolute;
   width: 100vw;
   top: 6%;
-  background-color: gray;
+  background-color: black;
   text-align: center; }
 
 ul {
   position: absolute;
   left: 0px;
   width: 100%;
-  background-color: gray;
-  padding: 10px; }
+  background-color: black;
+  padding: 0px;
+  height: 35px; }
+
+ul li:last-child {
+  border: none; }
 
 li {
   display: inline-block;
   list-style: none;
-  font-size: 20px;
-  font-family: 'Oswald', sans-serif; }
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-right: thick gray 1px;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+  height: 15px;
+  color: gray; }
 
 .menuItem:hover {
   color: darkred; }
 
-ul li:before {
-  content: " \2003\2022\2003";
-  font-size: 30px;
-  vertical-align: -10%; }
-
-ul li:first-child:before {
-  content: none; }
-
 img.header_bg {
-  position: absolute;
-  top: 37px;
-  left: 35%;
-  height: 10px; }
+  visibility: hidden; }
 
 img.logo {
   position: absolute;
-  top: 15px;
-  left: 46.5%;
-  height: 60px; }
+  left: 0px; }
 
 div.caption {
   font-family: 'Oswald', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   padding-top: .5em;
-  font-color: red; }
+  font-color: red;
+  max-height: 35px;
+  overflow: hidden;
+  padding: 10px; }
 
 div.subhead {
   font-family: 'Lato', sans-serif;
   font-size: 12px;
   padding-top: .5em;
-  color: gray; }
+  color: gray;
+  padding: 10px; }
 
 div.story0 {
-  position: absolute;
   background-color: white;
-  top: 150px;
-  left: 10%;
-  padding: 25px;
-  height: 400px;
-  width: 400px; }
+  height: 450px;
+  width: 350px;
+  margin-bottom: 12px; }
 
 div.story1 {
-  position: absolute;
-  top: 620px;
-  left: 10%;
   background-color: white;
-  padding: 25px;
-  height: 400px;
-  width: 400px; }
+  height: 450px;
+  width: 350px;
+  margin-bottom: 12px;
+  margin-left: 150px; }
 
 div.story2 {
-  position: absolute;
-  top: 150px;
-  left: 55%;
   background-color: white;
-  padding: 25px;
-  height: 400px;
-  width: 400px; }
+  height: 450px;
+  width: 350px;
+  margin-bottom: 12px; }
 
 div.story3 {
-  position: absolute;
-  top: 620px;
-  left: 55%;
   background-color: white;
-  padding: 25px;
-  height: 400px;
-  width: 400px; }
+  height: 450px;
+  width: 350px;
+  margin-bottom: 12px; }
 
 div.image {
   position: relative;
@@ -106,17 +101,35 @@ div.image {
   overflow: hidden; }
 
 img.thumbs {
+  padding: 15px;
   position: absolute;
   max-width: 100%; }
 
 div.mainDiv {
-  position: float;
-  background-image: url("../assets/bg.jpg"); }
+  background-image: url("../assets/bg.jpg");
+  display: inline;
+  position: absolute;
+  top: 100px; }
 
 body {
   background-image: url("../assets/bg.jpg"); }
 
+<<<<<<< HEAD
 @media screen and (min-width: 900px) {
+=======
+@media screen and (min-width: 600px) {
+  img.header_bg {
+    position: absolute;
+    visibility: visible;
+    top: 37px;
+    left: 230px;
+    height: 10px; }
+  img.logo {
+    position: absolute;
+    top: 15px;
+    left: 375px;
+    height: 60px; }
+>>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
   div.header {
     background-color: white;
     position: absolute;
@@ -127,18 +140,28 @@ body {
     position: absolute;
     width: 100vw;
     top: 6%;
+<<<<<<< HEAD
     background-color: gray;
     text-align: center; }
+=======
+    text-align: center;
+    background-color: black; }
+>>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
   ul {
     position: absolute;
     left: 0px;
     width: 100%;
+<<<<<<< HEAD
     background-color: gray;
+=======
+    background-color: black;
+>>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
     padding: 10px; }
   li {
     display: inline-block;
     list-style: none;
     font-size: 20px;
+<<<<<<< HEAD
     font-family: 'Oswald', sans-serif; }
   .menuItem:hover {
     color: darkred; }
@@ -152,10 +175,62 @@ body {
     position: absolute;
     top: 37px;
     left: 35%;
+=======
+    font-family: 'Oswald', sans-serif;
+    color: gray;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    border-style: none; }
+  .menuItem:hover {
+    color: darkred; }
+  ul li:before {
+    content: " \2003\2022\2003\2003";
+    font-size: 30px;
+    vertical-align: -12%; }
+  ul li:first-child:before {
+    content: none; }
+  .mainDiv {
+    background-image: url("../assets/bg.jpg"); }
+  .story0 {
+    position: absolute;
+    background-color: white;
+    top: 50px;
+    left: 25px;
+    padding: 25px; }
+  .story1 {
+    position: absolute;
+    top: 580px;
+    left: 25px;
+    background-color: white;
+    padding: 25px; }
+  .story2 {
+    position: absolute;
+    top: 50px;
+    left: 460px;
+    background-color: white;
+    padding: 25px; }
+  .story3 {
+    position: absolute;
+    top: 580px;
+    left: 460px;
+    background-color: white;
+    padding: 25px; } }
+
+@media screen and (min-width: 900px) {
+  .menuItem:hover {
+    color: darkred; }
+  img.header_bg {
+    position: absolute;
+    top: 37px;
+    left: 455px;
+>>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
     height: 10px; }
   img.logo {
     position: absolute;
     top: 15px;
+<<<<<<< HEAD
     left: 46.5%;
     height: 60px; }
   div.caption {
@@ -164,11 +239,16 @@ body {
     font-weight: bold;
     padding-top: .5em;
     font-color: red; }
+=======
+    left: 600px;
+    height: 60px; }
+>>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
   div.subhead {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     padding-top: .5em;
     color: gray; }
+<<<<<<< HEAD
   div.story0 {
     position: absolute;
     background-color: white;
@@ -201,6 +281,32 @@ body {
     padding: 25px;
     height: 400px;
     width: 400px; }
+=======
+  .story0 {
+    position: absolute;
+    background-color: white;
+    top: 50px;
+    left: 225px;
+    padding: 25px; }
+  .story1 {
+    position: absolute;
+    top: 600px;
+    left: 225px;
+    background-color: white;
+    padding: 25px; }
+  .story2 {
+    position: absolute;
+    top: 50px;
+    left: 710px;
+    background-color: white;
+    padding: 25px; }
+  .story3 {
+    position: absolute;
+    top: 600px;
+    left: 710px;
+    background-color: white;
+    padding: 25px; }
+>>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
   div.image {
     position: relative;
     display: block;
