@@ -16,6 +16,8 @@ let headImg2 = doc.createElement('img');
 headImg2.setAttribute('src', '../assets/logo.svg');
 headImg2.setAttribute('class', 'logo');
 
+
+
 header.appendChild(headImg);
 header.appendChild(headImg2);
 body[0].appendChild(header);
@@ -43,6 +45,9 @@ unorderedList.appendChild(li3);
 menuBar.appendChild(unorderedList);
 
 body[0].appendChild(menuBar);
+
+
+
 
 
 function makeXHRReq( method, listenerFunction, url ) {
@@ -79,10 +84,12 @@ function getStories() {
     let subhead = doc.createElement('div');
     subhead.setAttribute('class', 'subhead');
 
+
     let date = new Date(Date(Number(myStories[i].data.created)));
     let newDate = formattedDate(date);
     let timeString = moment(newDate, "YYYYMMDD").fromNow();
-    console.log(timeString);
+   console.log(timeString);
+
 
     let ups = myStories[i].data.ups;
     subhead.innerHTML = 'by ' + myStories[i].data.author + ' &bull; ' + timeString + ' &bull; Ups: ' +  ups;
@@ -93,7 +100,6 @@ function getStories() {
     mainDiv[0].appendChild(subDiv);
   }
 }
-
 
 function formattedDate(d) {
   let month = String(d.getMonth() + 1);
