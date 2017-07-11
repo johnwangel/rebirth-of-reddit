@@ -8,16 +8,15 @@ div.header {
 div.menuBar {
   position: absolute;
   width: 100vw;
-  top: 6%;
+  top: 4%;
   background-color: black;
   text-align: center; }
 
 ul {
   position: absolute;
-  left: 0px;
   width: 100%;
   background-color: black;
-  padding: 0px;
+  padding: 1px;
   height: 35px; }
 
 ul li:last-child {
@@ -65,32 +64,35 @@ div.subhead {
   font-size: 12px;
   padding-top: .5em;
   color: gray;
-  padding: 10px; }
+  padding: 7px; }
 
 div.story0 {
   background-color: white;
   height: 450px;
-  width: 350px;
-  margin-bottom: 12px; }
+  width: 500px;
+  margin-bottom: 12px;
+  margin-left: 35px; }
 
 div.story1 {
   background-color: white;
   height: 450px;
-  width: 350px;
+  width: 500px;
   margin-bottom: 12px;
-  margin-left: 150px; }
+  margin-left: 35px; }
 
 div.story2 {
   background-color: white;
   height: 450px;
-  width: 350px;
-  margin-bottom: 12px; }
+  width: 500px;
+  margin-bottom: 12px;
+  margin-left: 35px; }
 
 div.story3 {
   background-color: white;
   height: 450px;
-  width: 350px;
-  margin-bottom: 12px; }
+  width: 500px;
+  margin-bottom: 12px;
+  margin-left: 35px; }
 
 div.image {
   position: relative;
@@ -114,9 +116,6 @@ div.mainDiv {
 body {
   background-image: url("../assets/bg.jpg"); }
 
-<<<<<<< HEAD
-@media screen and (min-width: 900px) {
-=======
 @media screen and (min-width: 600px) {
   img.header_bg {
     position: absolute;
@@ -129,53 +128,28 @@ body {
     top: 15px;
     left: 375px;
     height: 60px; }
->>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
   div.header {
     background-color: white;
-    position: absolute;
+    position: ssabsolute;
     height: 80px;
-    width: 100vw;
+    width: 100%;
     margin-top: -8px; }
   div.menuBar {
     position: absolute;
     width: 100vw;
     top: 6%;
-<<<<<<< HEAD
-    background-color: gray;
-    text-align: center; }
-=======
     text-align: center;
     background-color: black; }
->>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
   ul {
     position: absolute;
     left: 0px;
     width: 100%;
-<<<<<<< HEAD
-    background-color: gray;
-=======
     background-color: black;
->>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
     padding: 10px; }
   li {
     display: inline-block;
     list-style: none;
     font-size: 20px;
-<<<<<<< HEAD
-    font-family: 'Oswald', sans-serif; }
-  .menuItem:hover {
-    color: darkred; }
-  ul li:before {
-    content: " \2003\2022\2003";
-    font-size: 30px;
-    vertical-align: -10%; }
-  ul li:first-child:before {
-    content: none; }
-  img.header_bg {
-    position: absolute;
-    top: 37px;
-    left: 35%;
-=======
     font-family: 'Oswald', sans-serif;
     color: gray;
     padding-right: 10px;
@@ -195,6 +169,7 @@ body {
     background-image: url("../assets/bg.jpg"); }
   .story0 {
     position: absolute;
+    width: 50px;
     background-color: white;
     top: 50px;
     left: 25px;
@@ -224,89 +199,42 @@ body {
   img.header_bg {
     position: absolute;
     top: 37px;
-    left: 455px;
->>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
+    left: 750px;
     height: 10px; }
   img.logo {
     position: absolute;
     top: 15px;
-<<<<<<< HEAD
-    left: 46.5%;
+    left: 895px;
     height: 60px; }
-  div.caption {
-    font-family: 'Oswald', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    padding-top: .5em;
-    font-color: red; }
-=======
-    left: 600px;
-    height: 60px; }
->>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
   div.subhead {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     padding-top: .5em;
     color: gray; }
-<<<<<<< HEAD
-  div.story0 {
-    position: absolute;
-    background-color: white;
-    top: 150px;
-    left: 10%;
-    padding: 25px;
-    height: 400px;
-    width: 400px; }
-  div.story1 {
-    position: absolute;
-    top: 620px;
-    left: 10%;
-    background-color: white;
-    padding: 25px;
-    height: 400px;
-    width: 400px; }
-  div.story2 {
-    position: absolute;
-    top: 150px;
-    left: 55%;
-    background-color: white;
-    padding: 25px;
-    height: 400px;
-    width: 400px; }
-  div.story3 {
-    position: absolute;
-    top: 620px;
-    left: 55%;
-    background-color: white;
-    padding: 25px;
-    height: 400px;
-    width: 400px; }
-=======
   .story0 {
     position: absolute;
     background-color: white;
     top: 50px;
-    left: 225px;
+    left: 280px;
     padding: 25px; }
   .story1 {
     position: absolute;
     top: 600px;
-    left: 225px;
+    left: 280px;
     background-color: white;
     padding: 25px; }
   .story2 {
     position: absolute;
     top: 50px;
-    left: 710px;
+    left: 1000px;
     background-color: white;
     padding: 25px; }
   .story3 {
     position: absolute;
     top: 600px;
-    left: 710px;
+    left: 1000px;
     background-color: white;
     padding: 25px; }
->>>>>>> 88174577995ee1a8d2c3bb747871742062807f53
   div.image {
     position: relative;
     display: block;
