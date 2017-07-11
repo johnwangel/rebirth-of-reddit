@@ -26,14 +26,17 @@ menuBar.setAttribute('class', 'menuBar');
 let unorderedList = doc.createElement('ul');
 
 let li1 = doc.createElement('li');
+li1.setAttribute('class', 'menuItem')
 li1.innerHTML = 'RANDOM';
 unorderedList.appendChild(li1);
 
 let li2 = doc.createElement('li');
 li2.innerHTML = 'MY BOARDS';
+li2.setAttribute('class', 'menuItem')
 unorderedList.appendChild(li2);
 
 let li3 = doc.createElement('li');
+li3.setAttribute('class', 'menuItem')
 li3.innerHTML = 'GET THE APP';
 unorderedList.appendChild(li3);
 
