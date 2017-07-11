@@ -1,6 +1,8 @@
 const doc = document;
 const mainDiv = doc.getElementsByClassName('mainDiv');
-console.log(mainDiv);
+const body = doc.getElementsByTagName('body');
+
+console.log(body);
 let req = makeXHRReq('GET', getStories, 'https://www.reddit.com/r/TheWayWeWere.json');
 
 let header = doc.createElement('div');
@@ -12,9 +14,36 @@ let headImg2 = doc.createElement('img');
 headImg2.setAttribute('src', '../assets/logo.svg');
 headImg2.setAttribute('class', 'logo')
 
+
+
 header.appendChild(headImg);
 header.appendChild(headImg2);
-mainDiv[0].appendChild(header);
+body[0].appendChild(header);
+
+let menuBar = doc.createElement("div");
+menuBar.setAttribute('class', 'menuBar');
+
+let unorderedList = doc.createElement('ul');
+
+let li1 = doc.createElement('li');
+li1.innerHTML = 'RANDOM';
+unorderedList.appendChild(li1);
+
+let li2 = doc.createElement('li');
+li2.innerHTML = 'MY BOARDS';
+unorderedList.appendChild(li2);
+
+let li3 = doc.createElement('li');
+li3.innerHTML = 'GET THE APP';
+unorderedList.appendChild(li3);
+
+menuBar.appendChild(unorderedList);
+
+body[0].appendChild(menuBar);
+
+
+
+
 
 function makeXHRReq( method, listenerFunction, url ) {
   let req = new XMLHttpRequest();
