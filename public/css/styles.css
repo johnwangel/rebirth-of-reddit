@@ -115,3 +115,104 @@ div.mainDiv {
 
 body {
   background-image: url("../assets/bg.jpg"); }
+
+@media screen and (min-width: 900px) {
+  div.header {
+    background-color: white;
+    position: absolute;
+    height: 80px;
+    width: 100vw;
+    margin-top: -8px; }
+  div.menuBar {
+    position: absolute;
+    width: 100vw;
+    top: 6%;
+    background-color: gray;
+    text-align: center; }
+  ul {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background-color: gray;
+    padding: 10px; }
+  li {
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif; }
+  .menuItem:hover {
+    color: darkred; }
+  ul li:before {
+    content: " \2003\2022\2003";
+    font-size: 30px;
+    vertical-align: -10%; }
+  ul li:first-child:before {
+    content: none; }
+  img.header_bg {
+    position: absolute;
+    top: 37px;
+    left: 35%;
+    height: 10px; }
+  img.logo {
+    position: absolute;
+    top: 15px;
+    left: 46.5%;
+    height: 60px; }
+  div.caption {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: .5em;
+    font-color: red; }
+  div.subhead {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    padding-top: .5em;
+    color: gray; }
+  div.story0 {
+    position: absolute;
+    background-color: white;
+    top: 150px;
+    left: 10%;
+    padding: 25px;
+    height: 400px;
+    width: 400px; }
+  div.story1 {
+    position: absolute;
+    top: 620px;
+    left: 10%;
+    background-color: white;
+    padding: 25px;
+    height: 400px;
+    width: 400px; }
+  div.story2 {
+    position: absolute;
+    top: 150px;
+    left: 55%;
+    background-color: white;
+    padding: 25px;
+    height: 400px;
+    width: 400px; }
+  div.story3 {
+    position: absolute;
+    top: 620px;
+    left: 55%;
+    background-color: white;
+    padding: 25px;
+    height: 400px;
+    width: 400px; }
+  div.image {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 98%;
+    height: 70%;
+    overflow: hidden; }
+  img.thumbs {
+    position: absolute;
+    max-width: 100%; }
+  div.mainDiv {
+    position: float;
+    background-image: url("../assets/bg.jpg"); }
+  body {
+    background-image: url("../assets/bg.jpg"); } }
