@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const doc = document;
 const mainDiv = doc.getElementsByClassName('mainDiv');
 const body = doc.getElementsByTagName('body');
@@ -9,10 +11,10 @@ let header = doc.createElement('div');
 header.setAttribute('class', 'header');
 let headImg = doc.createElement('img');
 headImg.setAttribute('src', '../assets/header_bg.svg');
-headImg.setAttribute('class', 'header_bg')
+headImg.setAttribute('class', 'header_bg');
 let headImg2 = doc.createElement('img');
 headImg2.setAttribute('src', '../assets/logo.svg');
-headImg2.setAttribute('class', 'logo')
+headImg2.setAttribute('class', 'logo');
 
 
 
@@ -82,11 +84,15 @@ function getStories() {
     let subhead = doc.createElement('div');
     subhead.setAttribute('class', 'subhead');
 
-    let date = Date(Number(myStories[i].data.created));
-    var today = new Date();
+
+    let date = new Date(Date(Number(myStories[i].data.created)));
+    let newDate = formattedDate(date);
+    let timeString = moment(newDate, "YYYYMMDD").fromNow();
+   console.log(timeString);
+
 
     let ups = myStories[i].data.ups;
-    subhead.innerHTML = 'by ' + myStories[i].data.author + ' &bull; ' + date + ' &bull; Ups: ' +  ups;
+    subhead.innerHTML = 'by ' + myStories[i].data.author + ' &bull; ' + timeString + ' &bull; Ups: ' +  ups;
 
     subDiv.appendChild(imgDiv);
     subDiv.appendChild(caption);
@@ -95,3 +101,13 @@ function getStories() {
   }
 }
 
+function formattedDate(d) {
+  let month = String(d.getMonth() + 1);
+  let day = String(d.getDate());
+  const year = String(d.getFullYear());
+
+ if (month.length < 2) month = '0' + month;
+  if (day.length < 2) day = '0' + day;
+
+ return `${year}${month}${day}`;
+}
