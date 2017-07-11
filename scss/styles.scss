@@ -11,7 +11,7 @@ div.header {
 div.menuBar {
   position: absolute;
   width: 100vw;
-  top: 6%;
+  top: 4%;
   background-color: black;
   text-align: center;
 
@@ -19,10 +19,9 @@ div.menuBar {
 
 ul {
     position: absolute;
-    left: 0px;
     width: 100%;
     background-color: black;
-    padding: 0px;
+    padding: 1px;
     height: 35px;
 }
 
@@ -80,30 +79,32 @@ div.subhead {
   font-size: 12px;
   padding-top: .5em;
   color: gray;
-  padding: 10px;
+  padding: 7px;
 }
 
 div.story0 {
   background-color: white;
   height: 450px;
-  width: 350px;
+  width: 500px;
   margin-bottom: 12px;
+  margin-left: 35px;
 
  }
 
 div.story1 {
   background-color: white;
   height: 450px;
-  width: 350px;
+  width: 500px;
    margin-bottom: 12px;
-   margin-left: 150px;
+   margin-left: 35px;
 }
 
 div.story2 {
   background-color: white;
   height: 450px;
-  width: 350px;
+  width: 500px;
   margin-bottom: 12px;
+  margin-left: 35px;
 
 
 }
@@ -111,8 +112,9 @@ div.story2 {
 div.story3 {
   background-color: white;
   height: 450px;
-  width: 350px;
+  width: 500px;
   margin-bottom: 12px;
+  margin-left: 35px;
 
 }
 
@@ -163,9 +165,9 @@ img.logo {
 
 div.header {
   background-color: white;
-  position: absolute;
+  position: ssabsolute;
   height: 80px;
-  width: 100vw;
+  width: 100%;
   margin-top: -8px;
 }
 
@@ -223,6 +225,7 @@ ul li:first-child:before {
 
 .story0 {
   position: absolute;
+  width: 50px;
   background-color: white;
   top: 50px;
   left: 25px;
@@ -268,13 +271,13 @@ ul li:first-child:before {
 img.header_bg {
   position: absolute;
   top: 37px;
-  left: 455px;
+  left: 750px;
   height: 10px; }
 
 img.logo {
   position: absolute;
   top: 15px;
-  left: 600px;
+  left: 895px;
   height: 60px; }
 
 
@@ -291,14 +294,14 @@ div.subhead {
   position: absolute;
   background-color: white;
   top: 50px;
-  left: 225px;
+  left: 280px;
   padding: 25px;
    }
 
 .story1 {
   position: absolute;
   top: 600px;
-  left: 225px;
+  left: 280px;
   background-color: white;
   padding: 25px;
    }
@@ -306,7 +309,7 @@ div.subhead {
 .story2 {
   position: absolute;
   top: 50px;
-  left: 710px;
+  left: 1000px;
   background-color: white;
   padding: 25px;
    }
@@ -314,7 +317,7 @@ div.subhead {
 .story3 {
   position: absolute;
   top: 600px;
-  left: 710px;
+  left: 1000px;
   background-color: white;
   padding: 25px;
    }
