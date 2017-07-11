@@ -14,80 +14,114 @@
 
 
 // Styles
-
 div.header {
   background-color: white;
-  height: 70px;
+  position: absolute;
+  height: 80px;
+  width: 100vw;
+  margin-top: -8px;
 }
+
+div.menuBar {
+  position: absolute;
+  width: 100vw;
+  top: 20%;
+  background-color: gray;
+}
+
+ul {
+/*   position: absolute; */
+  /* left: 30%; */
+
+}
+
+li {
+display: inline-block;
+color: black;
+padding-bottom: 3px;
+font-size: 20px;
+font-family: 'Oswald', sans-serif;
+padding-right: 30px;
+
+}
+
+li.hover{
+  background-color: red;
+}
+
+
+ul li:before { 
+  content: " \2022\2003";
+  font-size: 30px;
+  vertical-align: -10%;
+
+
+}
+
+ul li:first-child:before {
+ content: none;
+  }
 
 img.header_bg {
   position: absolute;
   top: 37px;
-  left: 520px;
-  height: 10px;
-}
+  left: 35%;
+  height: 10px; }
 
 img.logo {
   position: absolute;
   top: 15px;
-  left: 660px;
-  height: 60px;
-}
+  left: 46.5%;
+  height: 60px; }
 
 div.caption {
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
   font-weight: bold;
   padding-top: .5em;
-  font-color: red;
-}
+  font-color: red; }
 
 div.subhead {
   font-family: 'Lato', sans-serif;
   font-size: 12px;
   padding-top: .5em;
-  color: gray;
-}
+  color: gray; }
 
 div.story0 {
   position: absolute;
   background-color: white;
-  top: 75px;
-  left: 250px;
+  top: 150px;
+  left: 10%;
   padding: 25px;
   height: 400px;
-  width: 400px;
-}
+  width: 400px; }
 
 div.story1 {
   position: absolute;
-  top: 500px;
-  left: 250px;
+  top: 620px;
+  left: 10%;
   background-color: white;
   padding: 25px;
   height: 400px;
-  width: 400px;
-}
+  width: 400px; }
 
 div.story2 {
   position: absolute;
-  top: 75px;
-  left: 750px;
+  top: 150px;
+  left: 55%;
   background-color: white;
   padding: 25px;
   height: 400px;
-  width: 400px;
-}
+  width: 400px; }
 
 div.story3 {
   position: absolute;
-  top: 500px;
-  left: 750px;
+  top: 620px;
+  left: 55%;
   background-color: white;
   padding: 25px;
   height: 400px;
-  width: 400px;
-}
+  width: 400px; }
 
 div.image {
   position: relative;
@@ -95,26 +129,19 @@ div.image {
   margin: auto;
   width: 98%;
   height: 70%;
-  //width: 400px;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 img.thumbs {
   position: absolute;
-  //max-height: 100%;
-  max-width: 100%;
-
-}
+  max-width: 100%; }
 
 div.mainDiv {
   position: float;
-  background-image: url('../assets/bg.jpg');
-
-}
+  background-image: url("../assets/bg.jpg"); }
 
 body {
-  background-image: url('../assets/bg.jpg');
-}
+  background-image: url("../assets/bg.jpg"); }
+
 
 
   // body{
