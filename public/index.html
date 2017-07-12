@@ -2,14 +2,27 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="./css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
 <body>
-  <div class='mainDiv'></div>
+    <div class='header'>
+      <img  class='header_bg' src='../assets/header_bg.svg' />
+      <img  class='logo' src='../assets/logo.svg'' />
+    </div>
+    <div class='menuBar'>
+    <ul>
+      <li class='menuItem' onclick='randomPage()'>RANDOM</li>
+      <li class='menuItem' onclick='myBoards()'>MY BOARDS</li>
+      <li class='menuItem' onclick='getApp()'>GET THE APP</li>
+    </ul>
+  </div>
+  <div class='mainDiv'>
+
+  </div>
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
   <script src='./js/app.js'></script>
 </body>
 </html>
+
